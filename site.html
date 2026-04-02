@@ -1,98 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Find Personal Loan Options in Canada</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"/>
-  <style>
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-    body{font-family:'DM Sans',sans-serif;background:#f0f2f5;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px 16px;}
-    .card{background:#fff;border-radius:16px;padding:32px 28px 28px;max-width:440px;width:100%;box-shadow:0 2px 12px rgba(0,0,0,0.08);}
-    .badge-wrap{text-align:center;margin-bottom:16px;}
-    .badge{display:inline-block;background:#e8f0fe;color:#1a56db;font-size:11px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;padding:5px 13px;border-radius:100px;}
-    .prog-wrap{margin-bottom:22px;}
-    .prog-meta{display:flex;justify-content:space-between;font-size:12px;font-weight:600;color:#aaa;margin-bottom:6px;}
-    .prog-meta span:last-child{color:#1a56db;}
-    .prog-track{background:#eef1f7;border-radius:100px;height:7px;overflow:hidden;}
-    .prog-fill{height:100%;width:0%;background:#1a56db;border-radius:100px;transition:width 1s ease;}
-    .qlabel{font-size:12px;font-weight:600;color:#aaa;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px;}
-    h1{font-size:24px;font-weight:800;color:#0d1b2a;line-height:1.25;margin-bottom:8px;}
-    .sub{font-size:13px;color:#6b7280;margin-bottom:22px;line-height:1.5;}
-    .opts{display:flex;flex-direction:column;gap:10px;}
-    .opt{display:flex;align-items:center;gap:14px;padding:14px 16px;background:#f8faff;border:1.5px solid #d1ddf7;border-radius:12px;text-decoration:none;color:#0d1b2a;font-size:15px;font-weight:600;transition:all .15s ease;}
-    .opt:hover{background:#1a56db;color:#fff;border-color:#1a56db;}
-    .opt:hover .ico{background:rgba(255,255,255,.2);}
-    .ico{font-size:17px;background:#fff;width:38px;height:38px;border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 1px 3px rgba(0,0,0,.07);transition:background .15s;}
-    .lbl{flex:1;text-align:left;}
-    .arr{font-size:17px;opacity:.35;}
-    .info{margin-top:20px;text-align:center;font-size:12px;color:#9ca3af;line-height:1.6;}
-    .info a{color:#1a56db;text-decoration:none;}
-    footer{margin-top:20px;text-align:center;font-size:11.5px;color:#c0c7d0;}
-    footer a{color:#c0c7d0;text-decoration:none;margin:0 6px;}
-    html.page-loading,html.page-loading body{overflow:hidden;height:100%;}
-    .page-loader{position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:#f0f2f5;transition:opacity .45s ease,visibility .45s ease;}
-    .page-loader.is-hidden{opacity:0;visibility:hidden;pointer-events:none;}
-    .page-loader__inner{text-align:center;}
-    .page-loader__spinner{width:44px;height:44px;margin:0 auto 14px;border:3px solid #e2e8f0;border-top-color:#1a56db;border-radius:50%;animation:page-loader-spin .75s linear infinite;}
-    .page-loader__label{font-size:13px;font-weight:600;color:#64748b;letter-spacing:.02em;}
-    @keyframes page-loader-spin{to{transform:rotate(360deg)}}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-<div id="page-loader" class="page-loader" role="status" aria-live="polite" aria-busy="true">
-  <div class="page-loader__inner">
-    <div class="page-loader__spinner" aria-hidden="true"></div>
-    <p class="page-loader__label">Loading…</p>
-  </div>
-</div>
-<div class="card">
-  <div class="badge-wrap"><span class="badge">🇨🇦 Available Across Canada</span></div>
-  <div class="prog-wrap">
-    <div class="prog-meta"><span>Step 1 of 2</span><span>50% Complete</span></div>
-    <div class="prog-track"><div class="prog-fill" id="bar"></div></div>
-  </div>
-  <p class="qlabel">Quick question:</p>
-  <h1>Why do you need the loan?</h1>
-  <p class="sub">Select the option that best describes your situation to see relevant loan information.</p>
-  <div class="opts">
-    <a class="opt" href="blog.html"><div class="ico">💳</div><span class="lbl">Pay off debt</span><span class="arr">›</span></a>
-    <a class="opt" href="blog.html"><div class="ico">🏠</div><span class="lbl">Home expenses</span><span class="arr">›</span></a>
-    <a class="opt" href="blog.html"><div class="ico">🚗</div><span class="lbl">Car or transport</span><span class="arr">›</span></a>
-    <a class="opt" href="blog.html"><div class="ico">📋</div><span class="lbl">Other expenses</span><span class="arr">›</span></a>
-  </div>
-  <p class="info">We help Canadians explore loan options. <br/>No personal information required for this step.</p>
-</div>
-<footer>
-  <a href="#">About</a> · <a href="#">Privacy Policy</a> · <a href="#">Terms</a><br/>
-  © 2026 InstantLoanToday.org — For informational purposes only.
-</footer>
-<script>
-(function(){
-  var loader=document.getElementById('page-loader');
-  function showBar(){var b=document.getElementById('bar');if(b)b.style.width='50%';}
-  function hideLoader(){
-    if(!loader){showBar();return;}
-    var done=false;
-    function finish(){
-      if(done)return;
-      done=true;
-      if(loader&&loader.parentNode)loader.remove();
-      document.documentElement.classList.remove('page-loading');
-      setTimeout(showBar,120);
-    }
-    loader.classList.add('is-hidden');
-    loader.addEventListener('transitionend',function te(e){
-      if(e.propertyName!=='opacity')return;
-      loader.removeEventListener('transitionend',te);
-      finish();
-    });
-    setTimeout(finish,500);
-  }
-  document.documentElement.classList.add('page-loading');
-  if(document.readyState==='complete')hideLoader();
-  else window.addEventListener('load',hideLoader);
-})();
-</script>
+    
 </body>
 </html>
